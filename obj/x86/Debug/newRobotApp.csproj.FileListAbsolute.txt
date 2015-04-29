@@ -1,0 +1,11 @@
+C:\MyStuff\C#\newRobotApp\newRobotApp\bin\Debug\newRobotApp.exe
+C:\MyStuff\C#\newRobotApp\newRobotApp\bin\Debug\newRobotApp.pdb
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Debug\newRobotApp.Properties.Resources.resources
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Debug\newRobotApp.csproj.GenerateResource.Cache
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Debug\newRobotApp.exe
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Debug\newRobotApp.pdb
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Debug\newRobotApp.Form1.resources
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Debug\newRobotApp.PortUC.resources
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Debug\newRobotApp.ParameterUC.resources
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Debug\newRobotApp.csprojResolveAssemblyReference.cache
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Debug\newRobotApp.ArtificialHorizon.resources

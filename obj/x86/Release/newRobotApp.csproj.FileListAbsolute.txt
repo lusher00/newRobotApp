@@ -1,0 +1,10 @@
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Release\newRobotApp.ArtificialHorizon.resources
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Release\newRobotApp.Form1.resources
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Release\newRobotApp.PortUC.resources
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Release\newRobotApp.Properties.Resources.resources
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Release\newRobotApp.ParameterUC.resources
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Release\newRobotApp.csproj.GenerateResource.Cache
+C:\MyStuff\C#\newRobotApp\newRobotApp\bin\Release\newRobotApp.exe
+C:\MyStuff\C#\newRobotApp\newRobotApp\bin\Release\newRobotApp.pdb
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Release\newRobotApp.exe
+C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Release\newRobotApp.pdb
