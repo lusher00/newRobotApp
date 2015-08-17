@@ -67,9 +67,9 @@ namespace newRobotApp
                 
             }
             // give a message, if the port is not available:
-            catch
+            catch(Exception ex)
             {
-                MessageBox.Show("Serial port " + port.PortName + " cannot be opened!", "RS232 tester", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Serial port " + port.PortName + " cannot be opened! " + ex.ToString(), "RS232 tester", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cmbComSelect.SelectedText = "";
             }
 
@@ -92,9 +92,9 @@ namespace newRobotApp
             {
                 port.Close();
             }
-            catch
+            catch(Exception ex)
             {
-                MessageBox.Show("Can't close the port!");
+                MessageBox.Show("Can't close the port!" + ex.ToString());
             }
 
             if (!port.IsOpen)

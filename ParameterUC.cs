@@ -11,7 +11,7 @@ namespace newRobotApp
 {
     public partial class ParameterUC : UserControl
     {
-        private double value { get; set; }
+        public double value { get; set; }
         private double incrementValue;
         private SerialPort port;
         private PortUC portControl;
@@ -123,9 +123,15 @@ namespace newRobotApp
             if (cont.InvokeRequired)
             {
                 SetTextCallback d = new SetTextCallback(SetText);
-                this.Invoke(d, new object[] { text });
+                this.Invoke(d, new object[] { text, cont });
             }
             else cont.Text = text;
+        }
+
+        public void SetValue(string val)
+        {
+            value = Convert.ToDouble(val);
+            SetText(val, textBox);
         }
 
     }

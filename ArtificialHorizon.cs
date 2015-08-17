@@ -165,6 +165,26 @@ namespace newRobotApp
             // Put image support as found
             pe.Graphics.RotateTransform((float)(-alphaRot * 180 / Math.PI));
         }
- 
+
+        delegate void SetTextCallback(string text, Control cont);
+        private void SetText(string text, Control cont)
+        {
+            if (cont.InvokeRequired)
+            {
+                SetTextCallback d = new SetTextCallback(SetText);
+                this.Invoke(d, new object[] { text, cont });
+            }
+            else cont.Text = text;
+        }
+
+        public void SetLeftValue(string text)
+        {
+            SetText(text, labelLeft);
+        }
+
+        public void SetRightValue(string text)
+        {
+            SetText(text, labelRight);
+        }
     }
 }

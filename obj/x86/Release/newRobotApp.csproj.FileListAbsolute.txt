@@ -8,3 +8,14 @@ C:\MyStuff\C#\newRobotApp\newRobotApp\bin\Release\newRobotApp.exe
 C:\MyStuff\C#\newRobotApp\newRobotApp\bin\Release\newRobotApp.pdb
 C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Release\newRobotApp.exe
 C:\MyStuff\C#\newRobotApp\newRobotApp\obj\x86\Release\newRobotApp.pdb
+\\psf\Home\Documents\newRobotApp\obj\x86\Release\newRobotApp.exe
+\\psf\Home\Documents\newRobotApp\obj\x86\Release\newRobotApp.pdb
+\\psf\Home\Documents\newRobotApp\bin\Release\newRobotApp.exe
+\\psf\Home\Documents\newRobotApp\bin\Release\newRobotApp.pdb
+\\psf\Home\Documents\newRobotApp\obj\x86\Release\newRobotApp.csprojResolveAssemblyReference.cache
+\\psf\Home\Documents\newRobotApp\obj\x86\Release\newRobotApp.ArtificialHorizon.resources
+\\psf\Home\Documents\newRobotApp\obj\x86\Release\newRobotApp.Form1.resources
+\\psf\Home\Documents\newRobotApp\obj\x86\Release\newRobotApp.PortUC.resources
+\\psf\Home\Documents\newRobotApp\obj\x86\Release\newRobotApp.Properties.Resources.resources
+\\psf\Home\Documents\newRobotApp\obj\x86\Release\newRobotApp.ParameterUC.resources
+\\psf\Home\Documents\newRobotApp\obj\x86\Release\newRobotApp.csproj.GenerateResource.Cache

@@ -28,28 +28,39 @@ namespace newRobotApp
         Queue myQueue = new Queue();
         public Form1()
         {
+            InitializeComponent(); 
+            
             port = new SerialPort();
 
         
             portControl = new PortUC(port, 10, 10, "portControl");
-            this.Controls.Add(portControl);
+            this.tabPage1.Controls.Add(portControl); 
+            //this.Controls.Add(portControl);
 
             p = new ParameterUC(portControl, 10, 150, "p", 1.0);
-            this.Controls.Add(p);
+            this.tabPage1.Controls.Add(p);
+            //this.Controls.Add(p);
             i = new ParameterUC(portControl, 10, 185, "i", 0.1);
-            this.Controls.Add(i);
+            this.tabPage1.Controls.Add(i); 
+            //this.Controls.Add(i);
             d = new ParameterUC(portControl, 10, 220, "d", 0.1);
-            this.Controls.Add(d);
+            this.tabPage1.Controls.Add(d); 
+            //this.Controls.Add(d);
             ang = new ParameterUC(portControl, 10, 255, "ang", 0.1);
-            this.Controls.Add(ang);
+            this.tabPage1.Controls.Add(ang); 
+            //this.Controls.Add(ang);
             c = new ParameterUC(portControl, 10, 290, "c", 0.01);
-            this.Controls.Add(c);
+            this.tabPage1.Controls.Add(c); 
+            //this.Controls.Add(c);
             
             artificalHorizon = new ArtificialHorizon(400, 10, "artificalHorizon");
-            this.Controls.Add(artificalHorizon);
+            this.tabPage1.Controls.Add(artificalHorizon);
+            //artificalHorizon.SetLeftValue("LEFT!");
+            //artificalHorizon.SetRightValue("RIGHT!");
+            //this.Controls.Add(artificalHorizon);
 
-        
-            InitializeComponent();
+
+
 
             // This bit of code (using double buffer) reduces flicker from Refresh commands
             /*
@@ -77,7 +88,7 @@ namespace newRobotApp
                     try 
                     { 
                         InputData = port.ReadLine();
-                        portControl.SetInputText(InputData);
+                        //portControl.SetInputText(InputData);
                         myQueue.Enqueue(InputData);
                     }
                     catch 
@@ -104,13 +115,20 @@ namespace newRobotApp
                             break;
 
                         case "PARAMS":
+                            p.SetValue(ParsedData[2]);
+                            i.SetValue(ParsedData[3]);
+                            d.SetValue(ParsedData[4]);
+                            ang.SetValue(ParsedData[5]);
+                            c.SetValue(ParsedData[6]);
                             break;
 
                         case "UPDATE":
                             //artificalHorizon.PitchAngle = Convert.ToDouble(ParsedData[2]);
                             artificalHorizon.setPitchAngle(Convert.ToDouble(ParsedData[2]) + 90.0);
-                            
-                            
+                            artificalHorizon.SetLeftValue(ParsedData[7]);
+                            artificalHorizon.SetRightValue(ParsedData[8]);
+
+
                             break;
 
                         default:
@@ -126,7 +144,7 @@ namespace newRobotApp
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             pThreadRead.Abort();
-            //if (port.IsOpen == true) port.Close();
+            if (port.IsOpen == true) port.Close();
         }
 
         
