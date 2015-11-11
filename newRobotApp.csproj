@@ -74,6 +74,7 @@
     <Compile Include="ParameterUC.designer.cs">
       <DependentUpon>ParameterUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Settings.cs" />
     <EmbeddedResource Include="ArtificialHorizon.resx">
       <DependentUpon>ArtificialHorizon.cs</DependentUpon>
     </EmbeddedResource>

@@ -35,24 +35,26 @@
             // labelLeft
             // 
             this.labelLeft.AutoSize = true;
-            this.labelLeft.BackColor = System.Drawing.Color.White;
+            this.labelLeft.BackColor = System.Drawing.Color.DimGray;
             this.labelLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLeft.Location = new System.Drawing.Point(30, 280);
+            this.labelLeft.ForeColor = System.Drawing.Color.White;
+            this.labelLeft.Location = new System.Drawing.Point(30, 275);
             this.labelLeft.Name = "labelLeft";
-            this.labelLeft.Size = new System.Drawing.Size(51, 20);
+            this.labelLeft.Size = new System.Drawing.Size(14, 20);
             this.labelLeft.TabIndex = 0;
-            this.labelLeft.Text = "label1";
+            this.labelLeft.Text = "-";
             // 
             // labelRight
             // 
             this.labelRight.AutoSize = true;
-            this.labelRight.BackColor = System.Drawing.Color.White;
+            this.labelRight.BackColor = System.Drawing.Color.DimGray;
             this.labelRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRight.Location = new System.Drawing.Point(219, 280);
+            this.labelRight.ForeColor = System.Drawing.Color.White;
+            this.labelRight.Location = new System.Drawing.Point(219, 275);
             this.labelRight.Name = "labelRight";
-            this.labelRight.Size = new System.Drawing.Size(51, 20);
+            this.labelRight.Size = new System.Drawing.Size(14, 20);
             this.labelRight.TabIndex = 1;
-            this.labelRight.Text = "label2";
+            this.labelRight.Text = "-";
             // 
             // ArtificialHorizon
             // 

@@ -55,8 +55,8 @@ namespace newRobotApp
             
             artificalHorizon = new ArtificialHorizon(400, 10, "artificalHorizon");
             this.tabPage1.Controls.Add(artificalHorizon);
-            //artificalHorizon.SetLeftValue("LEFT!");
-            //artificalHorizon.SetRightValue("RIGHT!");
+            artificalHorizon.SetLeftValue("LEFT");
+            artificalHorizon.SetRightValue("RIGHT");
             //this.Controls.Add(artificalHorizon);
 
 
@@ -79,6 +79,8 @@ namespace newRobotApp
         private void ReadThread()
         {
 
+            
+        
             //System.Text.StringBuilder sb = new System.Text.StringBuilder();
             while (true)
             {

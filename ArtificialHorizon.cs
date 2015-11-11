@@ -172,9 +172,17 @@ namespace newRobotApp
             if (cont.InvokeRequired)
             {
                 SetTextCallback d = new SetTextCallback(SetText);
-                this.Invoke(d, new object[] { text, cont });
+                this.Invoke(d, new object[] { text, cont});
             }
-            else cont.Text = text;
+            else
+            {
+                cont.Text = text;
+                if(cont == labelLeft)
+                    cont.Location = new Point((cont.Parent.Size.Width / 3) - (cont.Size.Width / 2), cont.Location.Y);
+                else
+                    cont.Location = new Point(cont.Parent.Size.Width - (cont.Parent.Size.Width / 3) - (cont.Size.Width / 2), cont.Location.Y);
+
+            }
         }
 
         public void SetLeftValue(string text)
